@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    alert("Login validation passed!");
+    alert("Logged in successfully!");
 
     this.reset();
   });
