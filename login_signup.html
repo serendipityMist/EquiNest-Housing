@@ -4,40 +4,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login & Signup Page</title>
+  <title>EquiNest-Housing</title>
   <link rel="stylesheet" href="main.css">
-
 </head>
 
 <body>
-  <div class="formContainer">
-
-    <form id="login-form" class="form active">
+  <div class="login-signup-container">
+    <form id="login-form" class="login-signup-form active">
       <h2>Login</h2>
-      <input type="text" id="login-username" placeholder="Username" required>
-      <div class="password-container">
+      <div class="input-container">
+        <input type="text" id="login-username" placeholder="Username" required>
+      </div>
+      <div class="input-container">
         <input type="password" id="login-password" placeholder="Password" required>
       </div>
-      <input type="submit" value="Login">
+      <div class="btn-container">
+        <input type="submit" value="Login">
+      </div>
       <p id="login-error-msg" class="error-msg"></p>
       <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
     </form>
 
-    <form id="signup-form" class="form">
+    <form id="signup-form" class="login-signup-form">
       <h2>Sign Up</h2>
-      <input type="text" id="signup-username" placeholder="Username" required>
-      <input type="email" id="signup-email" placeholder="Email" required>
-      <div class="password-container">
+      <div class="input-container">
+        <input type="text" id="signup-username" placeholder="Username" required>
+      </div>
+      <div class="input-container">
+        <input type="email" id="signup-email" placeholder="Email" required>
+      </div>
+      <div class="input-container">
         <input type="password" id="signup-password" placeholder="Password" required>
-
+      </div>
+      <div class="input-container">
         <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+      </div>
+      <div class="gender-container">
+        <label>Gender:</label>
+        <div>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="terms-container">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms and Services</label>
+      </div>
+      <div class="btn-container">
         <input type="submit" value="Submit">
-        <p id="signup-error-msg" class="error-msg"></p>
-        <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+      </div>
+      <p id="signup-error-msg" class="error-msg"></p>
+      <p>Already have an account? <a href="#" id="login-link">Login</a></p>
     </form>
   </div>
-
-  <script src="login_signup.js"></script>
+  <script src="login_signup.js"></script> <!-- Note: Ensure the JavaScript file name matches your actual file. -->
 </body>
 
 </html>

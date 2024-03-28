@@ -1693,87 +1693,76 @@ span {
 }
 
 /* Log in and sign up page css */
-.formContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.login-signup-container {
+  width: 90%;
+  /* width: 400px; */
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto; /* Center the form on the available space */
+}
+.login-signup-container form {
+  width: 100%;
 }
 
-.formContainer .form {
-  width: 50%;
-  /* border: 1px solid black; */
+.login-signup-container .login-signup-form {
   display: none;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  animation: slideIn 0.5s ease forwards;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
-@keyframes slideIn {
+.login-signup-container .login-signup-form.active {
+  display: block;
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.formContainer .form.active {
-  display: flex;
-}
-
-.formContainer .form h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.formContainer .form input {
+.login-signup-container .input-container,
+.login-signup-container .gender-container,
+.login-signup-container .terms-container {
   margin-bottom: 15px;
+}
+
+.login-signup-container input[type="text"],
+.login-signup-container input[type="password"],
+.login-signup-container input[type="email"],
+.login-signup-container input[type="submit"] {
   width: 100%;
   padding: 10px;
+  margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  color: black;
+  border-radius: 4px;
 }
 
-.formContainer .form input[type="submit"] {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.login-signup-container input[type="submit"] {
   background-color: #007bff;
   color: white;
-  font-size: 16px;
+  border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
-.formContainer .form button:hover {
+.login-signup-container input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-.formContainer .error-msg {
-  color: red;
-  margin-top: 10px;
+.login-signup-container .error-msg {
+  color: #d9534f;
+  margin: 5px 0;
 }
 
-.formContainer .form p {
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.formContainer .form a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.formContainer .form a:hover {
-  text-decoration: underline;
-}
+/* Responsive Design */
 
 @media only screen and (max-width: 1100px) {
   .testimonial1 {
@@ -2089,6 +2078,11 @@ span {
   }
   .footerContents {
     border: none;
+  }
+
+  .login-signup-container {
+    width: 100%;
+    border-radius: 0;
   }
 }
 
