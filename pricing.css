@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f5f5f5;
+}
+.sliderContainer {
+  max-width: 100%;
+  position: relative;
+  height: 450px;
+  margin: 0 auto 20px;
+  z-index: -11111;
+}
+.fade {
+  animation: fade 1.5s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.sliderContainer h1 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  width: 50%;
+  position: absolute;
+  top: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.sliderContainer .change_height_one img {
+  height: 450px;
+  width: 100%;
+  background-blend-mode: color-dodge;
+}
+.sliderContainer #change_height_two img {
+  height: 450px;
+  width: 100%;
+}
+.sliderContainer #change_height_three img {
+  height: 450px;
+  width: 100%;
+}
+/* Villa Price card section */
+#villaPrice {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#villaPrice h1 {
+  margin: 20px 0 20px 30px;
+}
+
+.villaCardContainer {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto 30px;
+  padding: 20px;
+}
+.villaCardContainer:hover {
+  cursor: pointer;
+}
+
+.villaCard1,
+.villaCard2,
+.villaCard3,
+.villaCard4,
+.villaCard5,
+.villaCard6 {
+  width: 30%;
+  background-color: #f5f5f5;
+  box-shadow: 3px 3px 10px grey;
+}
+.villaCard1 img,
+.villaCard2 img,
+.villaCard3 img,
+.villaCard4 img,
+.villaCard5 img,
+.villaCard6 img {
+  width: 100%;
+}
+
+.villaContainerTop {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.villaContainerBottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.villaCard1 span,
+.villaCard2 span,
+.villaCard3 span,
+.villaCard4 span,
+.villaCard5 span,
+.villaCard6 span {
+  color: #4a0404;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  width: 100%;
+  text-align: left;
+  opacity: 0;
+  display: block;
+  transform: translateY(-100px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.villaCard1:hover > span:nth-of-type(1),
+.villaCard2:hover > span:nth-of-type(1),
+.villaCard3:hover > span:nth-of-type(1),
+.villaCard4:hover > span:nth-of-type(1),
+.villaCard5:hover > span:nth-of-type(1),
+.villaCard6:hover > span:nth-of-type(1) {
+  transition-delay: 0.1s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.villaCard1:hover > span:nth-of-type(2),
+.villaCard2:hover > span:nth-of-type(2),
+.villaCard3:hover > span:nth-of-type(2),
+.villaCard4:hover > span:nth-of-type(2),
+.villaCard5:hover > span:nth-of-type(2),
+.villaCard6:hover > span:nth-of-type(2) {
+  transition-delay: 0.25s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.villaCard1:hover > span:nth-of-type(3),
+.villaCard2:hover > span:nth-of-type(3),
+.villaCard3:hover > span:nth-of-type(3),
+.villaCard4:hover > span:nth-of-type(3),
+.villaCard5:hover > span:nth-of-type(3),
+.villaCard6:hover > span:nth-of-type(3) {
+  transition-delay: 0.35s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Below code for bungalow section */
+#bungalowPrice {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#bungalowPrice h1 {
+  margin: 20px 0 20px 30px;
+}
+
+.bungalowCardContainer {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto 30px;
+  padding: 20px;
+}
+.bungalowCardContainer:hover {
+  cursor: pointer;
+}
+.bungalowContainerTop {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.bungalowContainerBottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bungalowCard1,
+.bungalowCard2,
+.bungalowCard3,
+.bungalowCard4,
+.bungalowCard5,
+.bungalowCard6 {
+  width: 30%;
+  background-color: #f5f5f5;
+  box-shadow: 3px 3px 10px grey;
+}
+.bungalowCard1 img,
+.bungalowCard2 img,
+.bungalowCard3 img,
+.bungalowCard4 img,
+.bungalowCard5 img,
+.bungalowCard6 img {
+  width: 100%;
+}
+.bungalowCard1 span,
+.bungalowCard2 span,
+.bungalowCard3 span,
+.bungalowCard4 span,
+.bungalowCard5 span,
+.bungalowCard6 span {
+  color: #4a0404;
+  /* color: #834333; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  transform: translateY(-100px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.bungalowCard1:hover > span:nth-of-type(1),
+.bungalowCard2:hover > span:nth-of-type(1),
+.bungalowCard3:hover > span:nth-of-type(1),
+.bungalowCard4:hover > span:nth-of-type(1),
+.bungalowCard5:hover > span:nth-of-type(1),
+.bungalowCard6:hover > span:nth-of-type(1) {
+  transition-delay: 0.1s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bungalowCard1:hover > span:nth-of-type(2),
+.bungalowCard2:hover > span:nth-of-type(2),
+.bungalowCard3:hover > span:nth-of-type(2),
+.bungalowCard4:hover > span:nth-of-type(2),
+.bungalowCard5:hover > span:nth-of-type(2),
+.bungalowCard6:hover > span:nth-of-type(2) {
+  transition-delay: 0.25s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bungalowCard1:hover > span:nth-of-type(3),
+.bungalowCard2:hover > span:nth-of-type(3),
+.bungalowCard3:hover > span:nth-of-type(3),
+.bungalowCard4:hover > span:nth-of-type(3),
+.bungalowCard5:hover > span:nth-of-type(3),
+.bungalowCard6:hover > span:nth-of-type(3) {
+  transition-delay: 0.35s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Below code is for ranch house section */
+#ranchHousePrice {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+#ranchHousePrice h1 {
+  margin: 20px 0 20px 30px;
+}
+
+.ranchHouseCardContainer {
+  background-color: white;
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto 30px;
+}
+.ranchHouseCardContainer :hover {
+  cursor: pointer;
+}
+.ranchHouseContainerTop {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.ranchHouseContainerBottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ranchHouseCard1,
+.ranchHouseCard2,
+.ranchHouseCard3,
+.ranchHouseCard4,
+.ranchHouseCard5,
+.ranchHouseCard6 {
+  background-color: #f5f5f5;
+  width: 30%;
+  box-shadow: 3px 3px 10px grey;
+}
+.ranchHouseCard1 img,
+.ranchHouseCard2 img,
+.ranchHouseCard3 img,
+.ranchHouseCard4 img,
+.ranchHouseCard5 img,
+.ranchHouseCard6 img {
+  width: 100%;
+}
+
+.ranchHouseCard1 span,
+.ranchHouseCard2 span,
+.ranchHouseCard3 span,
+.ranchHouseCard4 span,
+.ranchHouseCard5 span,
+.ranchHouseCard6 span {
+  color: #4a0404;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  line-height: 25px;
+  opacity: 0;
+  display: block;
+  transform: translateY(-100px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.ranchHouseCard1:hover > span:nth-of-type(1),
+.ranchHouseCard2:hover > span:nth-of-type(1),
+.ranchHouseCard3:hover > span:nth-of-type(1),
+.ranchHouseCard4:hover > span:nth-of-type(1),
+.ranchHouseCard5:hover > span:nth-of-type(1),
+.ranchHouseCard6:hover > span:nth-of-type(1) {
+  transition-delay: 0.1s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ranchHouseCard1:hover > span:nth-of-type(2),
+.ranchHouseCard2:hover > span:nth-of-type(2),
+.ranchHouseCard3:hover > span:nth-of-type(2),
+.ranchHouseCard4:hover > span:nth-of-type(2),
+.ranchHouseCard5:hover > span:nth-of-type(2),
+.ranchHouseCard6:hover > span:nth-of-type(2) {
+  transition-delay: 0.25s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ranchHouseCard1:hover > span:nth-of-type(3),
+.ranchHouseCard2:hover > span:nth-of-type(3),
+.ranchHouseCard3:hover > span:nth-of-type(3),
+.ranchHouseCard4:hover > span:nth-of-type(3),
+.ranchHouseCard5:hover > span:nth-of-type(3),
+.ranchHouseCard6:hover > span:nth-of-type(3) {
+  transition-delay: 0.35s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer section code */
+footer {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 20px;
+}
+
+.footerDeatilsContainer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutUs {
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+}
+
+.aboutUs p {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.links {
+  width: 30%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.links a {
+  display: block;
+  color: white;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.links h3 {
+  margin-bottom: 30px;
+}
+
+.links .linksContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.location {
+  width: 30%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.location iframe {
+  height: 100%;
+  width: 90%;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .sliderContainer h1 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .villaCard1,
+  .villaCard2,
+  .villaCard3,
+  .villaCard4,
+  .villaCard5,
+  .villaCard6 {
+    width: 100%;
+    text-align: justify;
+    background-color: #f5f5f5;
+    box-shadow: 3px 3px 10px grey;
+  }
+  .villaContainerTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  .villaContainerBottom {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .bungalowCard1,
+  .bungalowCard2,
+  .bungalowCard3,
+  .bungalowCard4,
+  .bungalowCard5,
+  .bungalowCard6 {
+    width: 100%;
+    background-color: #f5f5f5;
+    box-shadow: 3px 3px 10px grey;
+  }
+  .bungalowContainerTop {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  .bungalowContainerBottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ranchHouseContainerTop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .ranchHouseContainerBottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .ranchHouseCard1,
+  .ranchHouseCard2,
+  .ranchHouseCard3,
+  .ranchHouseCard4,
+  .ranchHouseCard5,
+  .ranchHouseCard6 {
+    background-color: #f5f5f5;
+    width: 100%;
+    box-shadow: 3px 3px 10px grey;
+  }
+  .footerDeatilsContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .aboutUs {
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .links {
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+
+    margin-bottom: 25px;
+  }
+
+  .location {
+    width: 90%;
+    text-align: center;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,31 @@
+.sliderContainer {
+    max-width: 1400px;
+    position: relative;
+    z-index: -11111;
+    height: 450px;
+    margin: 0 auto 20px;
+  }
+  .fade {
+    animation: fade 1.5s infinite;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .sliderContainer .change_height_one img {
+    height: 450px;
+    width: 100%;
+    background-blend-mode: color-dodge;
+  }
+  .sliderContainer #change_height_two img {
+    height: 450px;
+    width: 100%;
+  }
+  .sliderContainer #change_height_three img {
+    height: 450px;
+    width: 100%;
+  }

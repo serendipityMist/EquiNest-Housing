@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.sliderContainer {
+  max-width: 100%;
+  position: relative;
+  height: 450px;
+  margin: 0 auto 20px;
+  z-index: -11111;
+}
+.fade {
+  animation: fade 1.5s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.sliderContainer h1 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  width: 50%;
+  position: absolute;
+  top: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.sliderContainer .change_height_one img {
+  height: 450px;
+  width: 100%;
+  background-blend-mode: color-dodge;
+}
+.sliderContainer #change_height_two img {
+  height: 450px;
+  width: 100%;
+}
+.sliderContainer #change_height_three img {
+  height: 450px;
+  width: 100%;
+}
+/* Home Rennovation CSS section */
+
+@media only screen and (max-width: 576px) {
+  .sliderContainer h1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}

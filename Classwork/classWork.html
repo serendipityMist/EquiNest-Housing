@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image hover</title>
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .container1 {
+      height: 200px;
+      width: 200px;
+      border: 1px solid black;
+    }
+
+    .container2 {
+      height: 200px;
+      width: 200px;
+      border: 1px solid black;
+    }
+
+    .container3 {
+      height: 200px;
+      width: 200px;
+      border: 1px solid black;
+    }
+
+    .container1>img {
+      height: 200px;
+      width: 200px;
+
+    }
+
+    .container2>img {
+      height: 200px;
+      width: 200px;
+
+    }
+
+    .container3>img {
+      height: 200px;
+      width: 200px;
+
+    }
+
+    .largeImage1 img {
+      height: 300px;
+      width: 300px;
+      display: none;
+    }
+
+    .largeImage2 img {
+      height: 300px;
+      width: 300px;
+      display: none;
+    }
+
+    .largeImage3 img {
+      height: 300px;
+      width: 300px;
+      display: none;
+    }
+
+    .container1:hover .largeImage1 img {
+      display: block;
+    }
+
+    .container2:hover .largeImage2 img {
+      display: block;
+    }
+
+    .container3:hover .largeImage3 img {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container1">
+      <img src="Images_Home _Page/Bathroom.jpg" alt="">
+      <div class="largeImage1">
+        <img src="Images_Home _Page/Bathroom.jpg" alt="">
+
+      </div>
+    </div>
+    <div class="container2">
+      <img src="Images_Home _Page/Bedroom.jpg" alt="">
+      <div class="largeImage2">
+        <img src="Images_Home _Page/Bedroom.jpg" alt="">
+
+      </div>
+
+    </div>
+    <div class="container3">
+      <img src="Images_Home _Page/Kitchen.jpg" alt="">
+      <div class="largeImage3">
+        <img src="Images_Home _Page/Kitchen.jpg" alt="">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <script>
+
+  </script>
+</body>
+
+</html>
