@@ -1674,13 +1674,12 @@ span {
 /* Log in and sign up page css */
 .login-signup-container {
   width: 90%;
-  /* width: 400px; */
   max-width: 400px;
   background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 50px auto; /* Center the form on the available space */
+  margin: 50px auto;
 }
 .login-signup-container form {
   width: 100%;
@@ -1689,6 +1688,9 @@ span {
 .login-signup-container .login-signup-form {
   display: none;
   animation: fadeIn 0.5s ease-in-out forwards;
+}
+.login-signup-form h2 {
+  margin-bottom: 10px;
 }
 
 .login-signup-container .login-signup-form.active {
@@ -1709,7 +1711,7 @@ span {
 .login-signup-container .input-container,
 .login-signup-container .gender-container,
 .login-signup-container .terms-container {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .login-signup-container input[type="text"],
@@ -1718,7 +1720,7 @@ span {
 .login-signup-container input[type="submit"] {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
+
   border: 1px solid #ccc;
   color: black;
   border-radius: 4px;
