@@ -1680,6 +1680,7 @@ span {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 50px auto;
+  transition: 0.3s ease-in-out;
 }
 .login-signup-container form {
   width: 100%;
@@ -1741,6 +1742,10 @@ span {
 .login-signup-container .error-msg {
   color: #d9534f;
   margin: 5px 0;
+}
+.login-signup-form a:hover {
+  color: red;
+  transition: 0.3s ease-in-out;
 }
 
 /* Responsive Design */
