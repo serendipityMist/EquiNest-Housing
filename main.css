@@ -2485,7 +2485,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
   .testimonial1 {
     height: 340px;
   }
