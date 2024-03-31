@@ -77,6 +77,6 @@ function throttle(callback, delay) {
   };
 }
 
-const throttledApplyAnimation = throttle(applyAnimation, 200); // Adjust delay as needed
+const throttledApplyAnimation = throttle(applyAnimation, 200);
 window.addEventListener("scroll", throttledApplyAnimation);
 window.addEventListener("resize", throttledApplyAnimation);
