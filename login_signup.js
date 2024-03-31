@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Elements
   const loginForm = document.getElementById("login-form");
   const signupForm = document.getElementById("signup-form");
   const loginLink = document.getElementById("signup-link");
   const signupLink = document.getElementById("login-link");
 
-  // Switch between forms
+  // Switching between forms when clicked on the signup and login
   loginLink.addEventListener("click", (e) => {
     e.preventDefault();
     signupForm.classList.add("active");
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     signupForm.classList.remove("active");
   });
 
-  // Login form validation
+  // Form Validation for login form
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -27,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     this.reset();
   });
 
+  // Form validation for signup form
   signupForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "signup-confirm-password"
     ).value;
 
-    // Check for password match
+    // Checking for password match and returning nothing if the password and confirm password doesn't match
     if (password !== confirmPassword) {
       alert("Passwords do not match. Please try again.");
       return;
