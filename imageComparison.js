@@ -61,7 +61,6 @@ function initComparison() {
     }
   }
 }
-// Your existing code...
 
 document.addEventListener("DOMContentLoaded", function () {
   initComparison();
